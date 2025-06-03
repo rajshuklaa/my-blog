@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../about.css">
+</head>
+
+<body>
+    <header> INTRODUCTION </header>
+    <article>
+        My self introduction <strong> Raj Shukla</strong>, <br>Am from <address> Uttar Pradesh , Jaunpur <br>223105 
+        </address>
+    </article>
+    <div class="datetime-box">
+        <div class="date" id="date"></div>
+        <div class="time" id="time"></div>
+    </div>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const date = now.toLocaleDateString(undefined, {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            const time = now.toLocaleTimeString();
+
+            document.getElementById('date').textContent = date;
+            document.getElementById('time').textContent = time;
+        }
+
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+
+
+</body>
+
+</html>

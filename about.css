@@ -1,0 +1,41 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 10;
+    background-color: #7706f0f1;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #170827f2;
+    color: rgb(242, 14, 14);
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+article {
+    margin: 50px;
+    color: chartreuse;
+    font: icon;
+}
+
+.datetime-box {
+    background: #ea0a0a;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.date {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.time {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
